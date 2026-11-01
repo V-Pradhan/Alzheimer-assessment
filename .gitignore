@@ -1,0 +1,42 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# MRI scans and datasets
+*.nii
+*.nii.gz
+*.dcm
+*.dicom
+*.zip
+datasets/
+data/
+sample_scans/
+
+# Training outputs and temporary files
+runs/
+logs/
+tensorboard/
+wandb/
+*.log
+*.tmp
+
+# Keep the trained model
+!backend/mri/weights/best_model.pt
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
